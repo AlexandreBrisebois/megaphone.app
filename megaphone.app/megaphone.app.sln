@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.218
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "megaphone.app", "megaphone.app.csproj", "{9D5AEF0C-5AD1-4E60-B624-553AC0B94F99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D5AEF0C-5AD1-4E60-B624-553AC0B94F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D5AEF0C-5AD1-4E60-B624-553AC0B94F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D5AEF0C-5AD1-4E60-B624-553AC0B94F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5AEF0C-5AD1-4E60-B624-553AC0B94F99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F136B23-549C-43F1-9864-5209C78DA8F6}
+	EndGlobalSection
+EndGlobal
