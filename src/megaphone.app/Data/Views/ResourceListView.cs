@@ -9,7 +9,7 @@ namespace Megaphone.App.Data.Views
 {
     public class ResourceListView
     {
-        public Dictionary<string, List<ResourceView>> resources { get; set; } = new();
+        public Dictionary<string, List<ResourceView>> Resources { get; set; } = new();
 
         public static ResourceListView Make(List<ResourceListRepresentation> list)
         {
@@ -19,12 +19,25 @@ namespace Megaphone.App.Data.Views
             {
                 var key = (DateTime.UtcNow - l.Date).Humanize(minUnit: TimeUnit.Day, maxUnit: TimeUnit.Month);
                 key = key == "0 days" ? "Today" : key + " ago";
-                listView.resources.Add(key, l.Resources.Select(r =>
+
+                if (listView.Resources.ContainsKey(key))
+                {
+                    listView.Resources[key].AddRange(l.Resources.Select(r =>
+                    new ResourceView
+                    {
+                        Display = r.Display,
+                        Url = r.Url
+                    }));
+                }
+                else
+                {
+                    listView.Resources.Add(key, l.Resources.Select(r =>
                     new ResourceView
                     {
                         Display = r.Display,
                         Url = r.Url
                     }).ToList());
+                }                
             }
 
             return listView;
