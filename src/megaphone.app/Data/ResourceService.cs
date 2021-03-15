@@ -1,21 +1,23 @@
-﻿using Megaphone.App.Data.Representations;
+﻿using Dapr.Client;
+using Megaphone.App.Data.Representations;
 using Megaphone.App.Data.Views;
 using Megaphone.Standard.Representations.Links;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Megaphone.App.Data
 {
     public class ResourceService
     {
-        private const string server = "http://HD:40002/v1.0/invoke/api/method/";
-        private readonly HttpClient httpClient;
+        private readonly DaprClient daprClient;
 
-        public ResourceService() => this.httpClient = new HttpClient();
+        public ResourceService(DaprClient daprClient)
+        {
+            this.daprClient = daprClient;
+        }
 
         public async Task<ResourceListView> GetRecent()
         {
@@ -53,9 +55,8 @@ namespace Megaphone.App.Data
 
         private async Task<ResourceListRepresentation> GetResources(string path)
         {
-            var httpResponse = await httpClient.GetAsync(server + path);
-            var content = await httpResponse.Content.ReadAsStringAsync();
-            var resourceList = JsonSerializer.Deserialize<ResourceListRepresentation>(content);
+            var resourceList = await daprClient.InvokeMethodAsync<ResourceListRepresentation>(HttpMethod.Get, "api", path);
+           
             return resourceList;
         }
     }

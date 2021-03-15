@@ -1,23 +1,22 @@
+using Dapr.Client;
 using Megaphone.App.Data.Representations;
 using System.Net.Http;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Megaphone.App.Data
 {
     public class FeedService
     {
-        private readonly HttpClient httpClient;
+        private readonly DaprClient daprClient;
 
-        public FeedService() => this.httpClient = new HttpClient();
+        public FeedService(DaprClient daprClient)
+        {
+            this.daprClient = daprClient;
+        }
 
         public async Task<FeedListRepresentation> GetFeeds()
         {
-            var httpResponse = await httpClient.GetAsync("http://HD:40002/v1.0/invoke/api/method/api/feeds");
-
-            var content = await httpResponse.Content.ReadAsStringAsync();
-
-            var feedList = JsonSerializer.Deserialize<FeedListRepresentation>(content);
+            var feedList = await daprClient.InvokeMethodAsync<FeedListRepresentation>(HttpMethod.Get,"api","api/feeds");
 
             return feedList;
         }
