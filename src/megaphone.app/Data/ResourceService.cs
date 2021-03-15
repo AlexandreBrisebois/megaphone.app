@@ -38,7 +38,7 @@ namespace Megaphone.App.Data
 
             var days = 0;
 
-            while (resourceCount < 40 || days < 15)
+            while (resourceCount < 40 && days < 15)
             {
                 var previous = list.Links.FirstOrDefault(l => l.Rel == Relations.Previous);
                 list = await GetResources(previous.Href);
