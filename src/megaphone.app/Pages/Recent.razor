@@ -1,0 +1,43 @@
+﻿@page "/recent"
+
+@using Megaphone.App.Data
+@using Megaphone.App.Data.Views
+
+@inject ResourceService service
+
+<h1>Recent News</h1>
+
+@if (list == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach (var l in list.resources)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>@l.Key</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var r in l.Value)
+                {
+                    <tr>
+                        <td><a href="@r.Url">@r.Display</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    private ResourceListView list;
+
+    protected override async Task OnInitializedAsync()
+    {
+        list = await service.GetRecent();
+    }
+}

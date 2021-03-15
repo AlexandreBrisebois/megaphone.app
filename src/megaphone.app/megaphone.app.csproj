@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Megaphone.App</RootNamespace>
+    <AssemblyName>megaphone.app</AssemblyName>
+    <UserSecretsId>25a29c96-c5a5-4e86-912c-fa1f98a8fc6a</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/dfbedef7-25e7-4450-8526-650ca03208ee/resourceGroups/ds1520plus/providers/microsoft.insights/components/ds1520plus-megaphone-app-insights</ApplicationInsightsResourceId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="Humanizer" Version="2.8.26" />
+    <PackageReference Include="Megaphone.Standard" Version="1.0.8" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+  </ItemGroup>
+
+</Project>

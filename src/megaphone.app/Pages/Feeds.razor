@@ -1,0 +1,42 @@
+﻿@page "/feeds"
+
+@using Megaphone.App.Data
+@using Megaphone.App.Data.Representations
+
+@inject FeedService feedService
+
+<h1>Feeds</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (feedList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Feed</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var f in feedList.Feeds)
+            {
+                <tr>
+                    <td><a href="@f.Url">@f.Display (@f.Url)</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private FeedListRepresentation feedList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        feedList = await feedService.GetFeeds();
+    }
+}

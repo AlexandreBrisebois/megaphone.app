@@ -1,0 +1,17 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: crawl-requests
+spec:
+  type: bindings.rabbitmq
+  metadata:
+  - name: queueName
+    value: "crawl-requests"
+  - name: host
+    value: "amqp://guest:guest@HD:5672"
+  - name: durable
+    value: "true"
+  - name: deletedWhenUnused
+    value: "true"
+  - name: ttlInSeconds
+    value: 600
