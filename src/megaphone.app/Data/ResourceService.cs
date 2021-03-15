@@ -36,7 +36,9 @@ namespace Megaphone.App.Data
                 resourceCount += list.Resources.Count;
             }
 
-            while (resourceCount < 40)
+            var days = 0;
+
+            while (resourceCount < 40 || days < 15)
             {
                 var previous = list.Links.FirstOrDefault(l => l.Rel == Relations.Previous);
                 list = await GetResources(previous.Href);
@@ -46,6 +48,8 @@ namespace Megaphone.App.Data
                     listRepresentations.Add(list);
                     resourceCount += list.Resources.Count;
                 }
+
+                days++;
             }
 
             var view = ResourceListView.Make(listRepresentations);
