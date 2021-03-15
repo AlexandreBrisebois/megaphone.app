@@ -1,14 +1,10 @@
 using Megaphone.App.Data;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Megaphone.App
 {
@@ -25,12 +21,17 @@ namespace Megaphone.App
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers().AddDapr();
+
             services.AddRazorPages();
             services.AddServerSideBlazor();
 
             services.AddSingleton<FeedService>();
             services.AddSingleton<ResourceService>();
-            services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
+
+            string key = Environment.GetEnvironmentVariable("INSTRUMENTATION_KEY");
+            if (!string.IsNullOrEmpty(key))
+                services.AddApplicationInsightsTelemetry(key);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +46,8 @@ namespace Megaphone.App
                 app.UseExceptionHandler("/Error");
             }
 
+            app.UseCloudEvents();
+
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -52,6 +55,8 @@ namespace Megaphone.App
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapBlazorHub();
+                endpoints.MapSubscribeHandler();
+                endpoints.MapControllers();
                 endpoints.MapFallbackToPage("/_Host");
             });
         }
