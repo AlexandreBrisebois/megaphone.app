@@ -1,0 +1,58 @@
+﻿{
+  "resources": [
+    {
+      "display": "Announcing Entity Framework Core 6.0 Preview 2",
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-6-0-preview-2/",
+      "links": []
+    },
+    {
+      "display": "Blinking LEDs with Raspberry Pi",
+      "url": "https://devblogs.microsoft.com/dotnet/blinking-leds-with-raspberry-pi/",
+      "links": []
+    },
+    {
+      "display": "A French Introduction to Kubernetes",
+      "url": "https://www.openshift.com/blog/a-french-introduction-to-kubernetes",
+      "links": []
+    },
+    {
+      "display": "Announcing .NET 6 Preview 2",
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-2/",
+      "links": []
+    },
+    {
+      "display": "How MLOps can drive governance for machine learning: A conversation with Algorithmia",
+      "url": "https://github.blog/2021-03-11-mlops-governance-for-machine-learning-algorithmia/",
+      "links": []
+    },
+    {
+      "display": "DevOps Fireside Chats Feb 2021 – Infrastructure as Code",
+      "url": "https://devblogs.microsoft.com/devops/devops-fireside-chats-feb-2021-infrastructure-as-code/",
+      "links": []
+    },
+    {
+      "display": "Connecting with sigstore",
+      "url": "https://www.openshift.com/blog/connecting-with-sigstore",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:48:21.7074955+00:00",
+  "date": "2021-03-11T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/11",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/10",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/12",
+      "method": "GET"
+    }
+  ]
+}

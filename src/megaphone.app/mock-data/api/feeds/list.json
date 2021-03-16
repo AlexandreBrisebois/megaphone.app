@@ -1,0 +1,588 @@
+﻿{
+  "feeds": [
+    {
+      "display": "Azure DevOps Blog",
+      "url": "https://devblogs.microsoft.com/devops/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/8c63ccd4-f60d-5db1-bf49-e63dca560a25",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/8c63ccd4-f60d-5db1-bf49-e63dca560a25",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": ".NET Blog",
+      "url": "https://devblogs.microsoft.com/dotnet/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/c50f7543-6b69-5e46-ae5e-bf0b82dede0e",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/c50f7543-6b69-5e46-ae5e-bf0b82dede0e",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Xamarin Blog",
+      "url": "https://devblogs.microsoft.com/xamarin/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/07c54ea5-73ca-5b4a-83a6-1f799f3ad5fd",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/07c54ea5-73ca-5b4a-83a6-1f799f3ad5fd",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Azure Cosmos DB Blog",
+      "url": "https://devblogs.microsoft.com/cosmosdb/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/256cd97b-84fe-5183-961c-40f274cee028",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/256cd97b-84fe-5183-961c-40f274cee028",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Azure Government",
+      "url": "https://devblogs.microsoft.com/azuregov/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/f0f4c089-5110-584a-8302-c842ec21553e",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/f0f4c089-5110-584a-8302-c842ec21553e",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Azure SDK Blog",
+      "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/27b23cbd-7af7-57d5-aac2-77e47efe7460",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/27b23cbd-7af7-57d5-aac2-77e47efe7460",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": null,
+      "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/27b23cbd-7af7-57d5-aac2-77e47efe7460",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/27b23cbd-7af7-57d5-aac2-77e47efe7460",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Developer Support",
+      "url": "https://devblogs.microsoft.com/premier-developer/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/6ad5da73-f2d7-5624-8f8e-618a4684b2d7",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/6ad5da73-f2d7-5624-8f8e-618a4684b2d7",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "IoT Developer",
+      "url": "https://devblogs.microsoft.com/iotdev/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/8c1699d8-c045-5f93-8468-d729bf3f769d",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/8c1699d8-c045-5f93-8468-d729bf3f769d",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "OData",
+      "url": "https://devblogs.microsoft.com/odata/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/ed9c916f-6fd4-596f-b050-4092bb5d759a",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/ed9c916f-6fd4-596f-b050-4092bb5d759a",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "PowerShell Community",
+      "url": "https://devblogs.microsoft.com/powershell-community/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/4c3b4ea0-34ee-59f2-a053-a7b833bdefeb",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/4c3b4ea0-34ee-59f2-a053-a7b833bdefeb",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Python",
+      "url": "https://devblogs.microsoft.com/python/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/adbd41fa-4a1f-55b0-aeac-4bf85943a037",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/adbd41fa-4a1f-55b0-aeac-4bf85943a037",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "The NuGet Blog",
+      "url": "https://devblogs.microsoft.com/nuget/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/ae39e9cf-65a9-5ebb-bac6-88f6238f578e",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/ae39e9cf-65a9-5ebb-bac6-88f6238f578e",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Visual Studio Code - Code Editing. Redefined.",
+      "url": "https://code.visualstudio.com/feed.xml",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/7e3a0dee-3705-5cf8-b83a-ab57e9905756",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/7e3a0dee-3705-5cf8-b83a-ab57e9905756",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-852554264193760653&board=AzureDevCommunityBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/46d27ea0-3735-54b4-abb7-1141c140f3a8",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/46d27ea0-3735-54b4-abb7-1141c140f3a8",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-852554264193760653&board=AzureAIBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/09e7dc36-ff31-5bb2-868a-85767d7a89f0",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/09e7dc36-ff31-5bb2-868a-85767d7a89f0",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-852554264193760653&board=AzureArchitectureBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/e01a7bad-26fe-55ea-81a2-c963b6ff792c",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/e01a7bad-26fe-55ea-81a2-c963b6ff792c",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-852554264193760653&board=AzureDataExplorer&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/bf491e29-07b8-5364-9ce8-cabe1af387cd",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/bf491e29-07b8-5364-9ce8-cabe1af387cd",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-659002378713078946&board=AzureDataShareBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/f6d9cb7a-c549-5657-9ba8-5140172aaad0",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/f6d9cb7a-c549-5657-9ba8-5140172aaad0",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=&board=AzureMarketplaceBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/b7ff9ee7-8f59-5c60-b5a3-0246b53725e0",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/b7ff9ee7-8f59-5c60-b5a3-0246b53725e0",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=8865915069847348681&board=AzureMigrationBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/3f02a22f-9893-51e9-9516-c0d2fdd25818",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/3f02a22f-9893-51e9-9516-c0d2fdd25818",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=8184494518967089178&board=AzureMonitorStatusBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/2e6463e5-af72-5119-be7f-dd4e505b521f",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/2e6463e5-af72-5119-be7f-dd4e505b521f",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=&board=AzureStackBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/c0fba057-0d95-58e4-b181-69dfdbb88270",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/c0fba057-0d95-58e4-b181-69dfdbb88270",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-3388905850971134053&board=AzureSynapseAnalyticsBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/fd273cf9-7a36-597e-a90d-5b08b872794e",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/fd273cf9-7a36-597e-a90d-5b08b872794e",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-8440483452201197351&board=IntegrationsonAzureBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/acd11391-c716-5d64-8d43-ed3f7d6843d4",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/acd11391-c716-5d64-8d43-ed3f7d6843d4",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-6032814344635500684&board=AzureNetworkingBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/dbdb0180-44ae-537a-8433-72d3a52440f6",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/dbdb0180-44ae-537a-8433-72d3a52440f6",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-3917634899566880856&board=AzurePurviewBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/27cf2026-9c92-598c-becd-73145c2971d4",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/27cf2026-9c92-598c-becd-73145c2971d4",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Featured Blog",
+      "url": "https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?tid=-3259880474597413614&board=AzureInfrastructureBlog&label=&messages=&size=10",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/f3bca24b-567b-5449-9e10-268e6e6c7d08",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/f3bca24b-567b-5449-9e10-268e6e6c7d08",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "OpenShift Blog",
+      "url": "https://www.openshift.com/blog/rss.xml",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/64d15e94-2b05-5e4c-8ac2-674463a05165",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/64d15e94-2b05-5e4c-8ac2-674463a05165",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Microsoft Power Platform Blog",
+      "url": "https://cloudblogs.microsoft.com/powerplatform/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/c74b79bc-27c8-5068-82b0-cb06b4fc55ff",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/c74b79bc-27c8-5068-82b0-cb06b4fc55ff",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "SQL Server Blog",
+      "url": "https://cloudblogs.microsoft.com/sqlserver/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/fc498f81-3811-54a7-8518-65d8d813bfa3",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/fc498f81-3811-54a7-8518-65d8d813bfa3",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "The DevOps Lab  - Channel 9",
+      "url": "https://s.ch9.ms/Shows/DevOps-Lab/feed",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/6e57a5d5-7ff7-51db-9402-056b8659bf16",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/6e57a5d5-7ff7-51db-9402-056b8659bf16",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "AI Show  - Channel 9",
+      "url": "https://s.ch9.ms/Shows/AI-Show/feed",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/e5a70c80-5cd7-5782-bb4e-cf519c81d8a4",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/e5a70c80-5cd7-5782-bb4e-cf519c81d8a4",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "Microsoft On the Issues",
+      "url": "https://blogs.microsoft.com/on-the-issues/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/44137d46-1e5f-570e-bc90-49b9dfb384bf",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/44137d46-1e5f-570e-bc90-49b9dfb384bf",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "",
+      "url": "https://blog.linkedin.com/topics.rss.html",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/1e29dabd-6ab2-50fd-8bc6-9e79fac9c7fe",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/1e29dabd-6ab2-50fd-8bc6-9e79fac9c7fe",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "display": "The GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "links": [
+        {
+          "rel": "self",
+          "href": "api/feeds/276587ea-f99f-5b5c-b964-681f0c8dba4c",
+          "method": "GET"
+        },
+        {
+          "rel": "delete",
+          "href": "api/feeds/276587ea-f99f-5b5c-b964-681f0c8dba4c",
+          "method": "DELETE"
+        }
+      ]
+    }
+  ],
+  "updated": "2021-03-15T23:47:26.5647284+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/feeds",
+      "method": "GET"
+    }
+  ]
+}

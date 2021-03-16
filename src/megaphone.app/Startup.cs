@@ -1,10 +1,13 @@
 using Megaphone.App.Data;
+using Megaphone.Standard.Extensions;
+using Megaphone.Standard.Time;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
+using System.Diagnostics;
 
 namespace Megaphone.App
 {
@@ -26,8 +29,20 @@ namespace Megaphone.App
             services.AddRazorPages();
             services.AddServerSideBlazor();
 
-            services.AddSingleton<FeedService>();
-            services.AddSingleton<ResourceService>();
+            if (Debugger.IsAttached)
+            {
+                var clock = new DateTimeOffset(2021, 3, 15, 0, 0, 0, TimeSpan.Zero).ToFixedClock();
+
+                services.AddSingleton<IClock>(clock);
+                services.AddSingleton<IFeedService, MockFeedService>();
+                services.AddSingleton<IResourceService, MockResourceService>();
+            }
+            else
+            {
+                services.AddSingleton<IClock, UtcClock>();
+                services.AddSingleton<IFeedService, DaprFeedService>();
+                services.AddSingleton<IResourceService, DaprResourceService>();
+            }
 
             string key = Environment.GetEnvironmentVariable("INSTRUMENTATION_KEY");
             if (!string.IsNullOrEmpty(key))

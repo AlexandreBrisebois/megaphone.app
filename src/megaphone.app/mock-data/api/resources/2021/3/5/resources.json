@@ -1,0 +1,33 @@
+﻿{
+  "resources": [
+    {
+      "display": "Top Stories from the Microsoft DevOps Community – 2021.03.05",
+      "url": "https://devblogs.microsoft.com/devops/top-stories-from-the-microsoft-devops-community-2021-03-05/",
+      "links": []
+    },
+    {
+      "display": "Reading a text file bottom up",
+      "url": "https://devblogs.microsoft.com/powershell-community/reading-a-text-file-bottom-up/",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:47:31.7236891+00:00",
+  "date": "2021-03-05T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/5",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/4",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/6",
+      "method": "GET"
+    }
+  ]
+}

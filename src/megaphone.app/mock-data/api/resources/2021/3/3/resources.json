@@ -1,0 +1,33 @@
+﻿{
+  "resources": [
+    {
+      "display": "F# and F# tools update for Visual Studio 16.9",
+      "url": "https://devblogs.microsoft.com/dotnet/f-and-f-tools-update-for-visual-studio-16-9/",
+      "links": []
+    },
+    {
+      "display": "What We Mean by Equitable Outcomes for the Global Workforce",
+      "url": "https://blog.linkedin.com/2021/march/what-we-mean-by-equitable-outcomes-for-the-global-workforce",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:48:26.6180779+00:00",
+  "date": "2021-03-03T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/3",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/2",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/4",
+      "method": "GET"
+    }
+  ]
+}

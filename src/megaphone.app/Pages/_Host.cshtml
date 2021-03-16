@@ -17,6 +17,20 @@
     <link href="megaphone.app.styles.css" rel="stylesheet" />
 </head>
 <body>
+    <script>
+        function ShareOnLinkedin(url)
+        {
+            var w=694;
+            var h=550;
+            
+            var href="https://linkedin.com/elevate/bookmarklet?url="+encodeURIComponent(url);
+           
+            var opts="menubar=no,location=no,resizable=yes,scrollbars=yes,status=yes,left=0,top=0";
+            opts+=",height="+h+",width="+w;
+            window.open(href,"LinkedIn Elevate",opts);
+            return false;
+        }
+    </script>
     <component type="typeof(App)" render-mode="ServerPrerendered" />
 
     <div id="blazor-error-ui">

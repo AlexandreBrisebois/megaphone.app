@@ -1,0 +1,33 @@
+﻿{
+  "resources": [
+    {
+      "display": "State of the NuGet Ecosystem",
+      "url": "https://devblogs.microsoft.com/nuget/state-of-the-nuget-ecosystem/",
+      "links": []
+    },
+    {
+      "display": "Build Responsible AI using Error Analysis toolkit",
+      "url": "https://channel9.msdn.com/Shows/AI-Show/Build-Responsible-AI-using-Error-Analysis-toolkit",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:47:31.7842545+00:00",
+  "date": "2021-03-01T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/1",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/2/28",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/2",
+      "method": "GET"
+    }
+  ]
+}

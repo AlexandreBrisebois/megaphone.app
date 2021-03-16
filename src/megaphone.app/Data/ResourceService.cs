@@ -1,27 +1,25 @@
-﻿using Dapr.Client;
-using Megaphone.App.Data.Representations;
+﻿using Megaphone.App.Data.Representations;
 using Megaphone.App.Data.Views;
 using Megaphone.Standard.Representations.Links;
+using Megaphone.Standard.Time;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Megaphone.App.Data
 {
-    public class ResourceService
+    public abstract class ResourceService : IResourceService
     {
-        private readonly DaprClient daprClient;
+        private readonly IClock clock;
 
-        public ResourceService(DaprClient daprClient)
+        public ResourceService(IClock clock)
         {
-            this.daprClient = daprClient;
+            this.clock = clock;
         }
-
         public async Task<ResourceListView> GetRecent()
         {
-            var date = DateTime.UtcNow;
+            var date = clock.Now;
             var path = $"api/resources/{ date.Year}/{ date.Month}/{ date.Day}";
 
             ResourceListRepresentation list = await GetResources(path);
@@ -56,12 +54,6 @@ namespace Megaphone.App.Data
 
             return view;
         }
-
-        private async Task<ResourceListRepresentation> GetResources(string path)
-        {
-            var resourceList = await daprClient.InvokeMethodAsync<ResourceListRepresentation>(HttpMethod.Get, "api", path);
-           
-            return resourceList;
-        }
+        protected abstract Task<ResourceListRepresentation> GetResources(string path);
     }
 }

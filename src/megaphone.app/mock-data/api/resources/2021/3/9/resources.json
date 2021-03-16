@@ -1,0 +1,43 @@
+﻿{
+  "resources": [
+    {
+      "display": ".NET March 2021 Updates – 5.0.4, 3.1.13, 2.1.26",
+      "url": "https://devblogs.microsoft.com/dotnet/net-march-2021/",
+      "links": []
+    },
+    {
+      "display": "GitHub Discussions now available for private repositories",
+      "url": "https://github.blog/2021-03-09-github-discussions-now-available-for-private-repositories/",
+      "links": []
+    },
+    {
+      "display": "GitHub security update: A bug related to handling of authenticated sessions",
+      "url": "https://github.blog/2021-03-08-github-security-update-a-bug-related-to-handling-of-authenticated-sessions/",
+      "links": []
+    },
+    {
+      "display": "Provision Red Hat\u00A0CoreOS (RHCOS) Machines With Custom V3 Ignition Files",
+      "url": "https://www.openshift.com/blog/provision-red-hat-coreos-rhcos-machines-with-custom-v3-ignition-files",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:48:21.662063+00:00",
+  "date": "2021-03-09T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/9",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/8",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/10",
+      "method": "GET"
+    }
+  ]
+}

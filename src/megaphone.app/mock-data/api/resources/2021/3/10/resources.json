@@ -1,0 +1,38 @@
+﻿{
+  "resources": [
+    {
+      "display": "Signing and Verifying Container Images",
+      "url": "https://www.openshift.com/blog/signing-and-verifying-container-images",
+      "links": []
+    },
+    {
+      "display": "Expanding AccountGuard protections for high-risk customers in 31 democracies",
+      "url": "https://blogs.microsoft.com/on-the-issues/2021/03/09/accountguard-expansion-high-risk-defending-democracy/",
+      "links": []
+    },
+    {
+      "display": "OpenShift 4.7 - All the Information, All the Blogs",
+      "url": "https://www.openshift.com/blog/openshift-4.7-all-the-information-all-the-blogs",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:48:21.7508971+00:00",
+  "date": "2021-03-10T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/10",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/9",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/11",
+      "method": "GET"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+﻿{
+  "resources": [
+    {
+      "display": "Announced at Ignite: new Cassandra and MongoDB capabilities, real-time analytics, enhanced security, and more",
+      "url": "https://devblogs.microsoft.com/cosmosdb/announced-at-ignite-new-cassandra-and-mongodb-capabilities-real-time-analytics-enhanced-security-and-more/",
+      "links": []
+    },
+    {
+      "display": "Azure Cosmos DB API for MongoDB v4.0 Is Here – Three Reasons to Upgrade Now",
+      "url": "https://devblogs.microsoft.com/cosmosdb/three-reasons-to-upgrade-to-azure-cosmos-db-api-for-mongodb-4-0/",
+      "links": []
+    },
+    {
+      "display": "Now in preview: Azure Managed Instance for Apache Cassandra",
+      "url": "https://devblogs.microsoft.com/cosmosdb/preview-azure-managed-instance-for-apache-cassandra/",
+      "links": []
+    },
+    {
+      "display": "Solve IT governance and admin challenges with new features for Power Platform",
+      "url": "https://cloudblogs.microsoft.com/powerplatform/2021/03/02/solve-it-governance-and-admin-challenges-with-new-features-for-power-platform/",
+      "links": []
+    },
+    {
+      "display": "Moving work items around using the Azure DevOps Migration Tools",
+      "url": "https://channel9.msdn.com/Shows/DevOps-Lab/Moving-work-items-around-using-the-Azure-DevOps-Migration-Tools",
+      "links": []
+    },
+    {
+      "display": "Creating Azure Solutions with the new Azure SDKs, F#, and Farmer",
+      "url": "https://devblogs.microsoft.com/azure-sdk/azure-solutions-azure-sdk-fsharp-farmer/",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:47:26.7901902+00:00",
+  "date": "2021-03-02T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/2",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/1",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/3",
+      "method": "GET"
+    }
+  ]
+}

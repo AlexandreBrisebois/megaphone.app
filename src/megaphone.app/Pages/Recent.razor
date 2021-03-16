@@ -2,8 +2,10 @@
 
 @using Megaphone.App.Data
 @using Megaphone.App.Data.Views
+@using System.Diagnostics
+@using System.Net 
 
-@inject ResourceService service
+@inject IResourceService service
 
 <h1>Recent News</h1>
 
@@ -18,20 +20,19 @@ else
         <table class="table">
             <thead>
                 <tr>
-                    <th>@l.Key</th>
-                    <th></th>                  
+                    <th align="left" colspan="2">@l.Key</th>                    
                 </tr>
             </thead>
             <tbody>
                 @foreach (var r in l.Value)
                 {
-                    <tr>
-                        <td><a href="@r.Url">@r.Display</a></td>
-                        <td width="15">
-                            <a onclick="javascript:(function ()%7Bvar w=694,h=732,curUrl=window.location.href,href='https://linkedin.com/elevate/bookmarklet?url='+encodeURIComponent(@r.Url),opts='menubar=no,location=no,resizable=yes,scrollbars=yes,status=yes,left=0,top=0';opts+=',height='+h+',width='+w;var win=window.open(href,'LinkedIn Elevate',opts);%7D)()">
-                                <span class="glyphicon glyphicon-share" aria-hidden="true"></span>
-                            </a>                            
-                        </td>                        
+                    <tr>                        
+                        <td width="20">
+                            <a onclick="return ShareOnLinkedin('@r.Url');" href="@r.Url">
+                                <span class="oi oi-share-boxed" aria-hidden="true"></span>
+                            </a>
+                        </td>
+                        <td align="left"><a href="@r.Url" target="_blank">@r.Display</a></td>
                     </tr>
                 }
             </tbody>
@@ -40,10 +41,10 @@ else
 }
 
 @code {
-    private ResourceListView list;
+    private ResourceListView list = new();
 
     protected override async Task OnInitializedAsync()
     {
-        list = await service.GetRecent();
+            list = await service.GetRecent();
     }
 }

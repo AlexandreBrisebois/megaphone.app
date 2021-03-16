@@ -1,0 +1,22 @@
+﻿{
+  "resources": [],
+  "updated": "2021-03-15T23:52:44.0695056+00:00",
+  "date": "2021-03-06T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/6",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/5",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/7",
+      "method": "GET"
+    }
+  ]
+}

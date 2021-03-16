@@ -43,10 +43,4 @@ namespace Megaphone.App.Data.Views
             return listView;
         }
     }
-
-    public class ResourceView
-    {
-        public string Display { get; set; }
-        public string Url { get; set; }
-    }
 }

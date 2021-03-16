@@ -1,0 +1,38 @@
+﻿{
+  "resources": [
+    {
+      "display": "OpenShift Commons Briefing: Deterministic vs Probabilistic Security: Leveraging Everything as Code with Steve Giguere (StackRox)",
+      "url": "https://www.openshift.com/blog/openshift-commons-briefing-deterministic-vs-probabilistic-security-leveraging-everything-as-code-with-steve-giguere-stackrox",
+      "links": []
+    },
+    {
+      "display": "Working With Operating System Templates in OpenShift Virtualization",
+      "url": "https://www.openshift.com/blog/working-with-operating-system-templates-in-openshift-virtualization",
+      "links": []
+    },
+    {
+      "display": "Ask an OpenShift Admin Office Hour - etcd: The heart of Kubernetes",
+      "url": "https://www.openshift.com/blog/ask-an-openshift-admin-office-hour-etcd-the-heart-of-kubernetes",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:48:21.6428536+00:00",
+  "date": "2021-03-12T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/12",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/11",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/13",
+      "method": "GET"
+    }
+  ]
+}

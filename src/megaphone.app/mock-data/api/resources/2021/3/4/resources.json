@@ -1,0 +1,43 @@
+﻿{
+  "resources": [
+    {
+      "display": ".NET Core 2.1 will reach End of Support on August 21, 2021",
+      "url": "https://devblogs.microsoft.com/dotnet/net-core-2-1-will-reach-end-of-support-on-august-21-2021/",
+      "links": []
+    },
+    {
+      "display": ".NET Interactive with SQL!| .NET Notebooks in Visual Studio Code",
+      "url": "https://devblogs.microsoft.com/dotnet/net-interactive-with-sql-net-notebooks-in-visual-studio-code/",
+      "links": []
+    },
+    {
+      "display": "Learn to build HTTP APIs with .NET",
+      "url": "https://devblogs.microsoft.com/dotnet/learn-to-build-http-apis-with-net/",
+      "links": []
+    },
+    {
+      "display": "CollectionView Drag & Drop Item Reordering with Gesture Recognizers",
+      "url": "https://devblogs.microsoft.com/xamarin/collectionview-drag-and-drop/",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:47:27.1445639+00:00",
+  "date": "2021-03-04T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/4",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/3",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/5",
+      "method": "GET"
+    }
+  ]
+}

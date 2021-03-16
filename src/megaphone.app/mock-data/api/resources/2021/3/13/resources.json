@@ -1,0 +1,28 @@
+﻿{
+  "resources": [
+    {
+      "display": "Investigating a Linux CVE with .NET Images",
+      "url": "https://devblogs.microsoft.com/dotnet/investigating-a-linux-cve-with-net-images/",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T22:47:21.7471541+00:00",
+  "date": "2021-03-13T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/13",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/12",
+      "method": "GET"
+    },
+    {
+      "rel": "next",
+      "href": "api/resources/2021/3/14",
+      "method": "GET"
+    }
+  ]
+}

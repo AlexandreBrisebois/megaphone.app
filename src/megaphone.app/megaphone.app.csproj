@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\mock-data\resources.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapr.AspNetCore" Version="1.0.0" />
     <PackageReference Include="Humanizer" Version="2.8.26" />
     <PackageReference Include="Megaphone.Standard" Version="1.0.8" />

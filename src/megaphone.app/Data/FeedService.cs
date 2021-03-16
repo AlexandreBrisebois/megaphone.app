@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 
 namespace Megaphone.App.Data
 {
-    public class FeedService
+    public class DaprFeedService : IFeedService
     {
         private readonly DaprClient daprClient;
 
-        public FeedService(DaprClient daprClient)
+        public DaprFeedService(DaprClient daprClient)
         {
             this.daprClient = daprClient;
         }
 
         public async Task<FeedListRepresentation> GetFeeds()
         {
-            var feedList = await daprClient.InvokeMethodAsync<FeedListRepresentation>(HttpMethod.Get,"api","api/feeds");
+            var feedList = await daprClient.InvokeMethodAsync<FeedListRepresentation>(HttpMethod.Get, "api", "api/feeds");
 
             return feedList;
         }

@@ -1,0 +1,53 @@
+﻿{
+  "resources": [
+    {
+      "display": "ML.NET and Model Builder March Updates",
+      "url": "https://devblogs.microsoft.com/dotnet/ml-net-and-model-builder-march-updates/",
+      "links": []
+    },
+    {
+      "display": "OpenShift Commons Briefing: Asynchronous Data Replication with John Strunk and Scott Creely (Red Hat)",
+      "url": "https://www.openshift.com/blog/openshift-commons-briefing-asynchronous-data-replication-with-john-strunk-and-scott-creely-red-hat",
+      "links": []
+    },
+    {
+      "display": "AI for Health – a year of innovations from grantees across the globe",
+      "url": "https://blogs.microsoft.com/on-the-issues/2021/03/15/ai-for-health-grantee-partner-covid-19-anniversary/",
+      "links": []
+    },
+    {
+      "display": "FUD chills: GitHub stands with security researchers on DMCA Section 1201",
+      "url": "https://github.blog/2021-03-15-fud-chills-github-stands-with-security-researchers-on-dmca-section-1201/",
+      "links": []
+    },
+    {
+      "display": "Dependabot ❤️s private dependencies",
+      "url": "https://github.blog/2021-03-15-dependabot-private-dependencies/",
+      "links": []
+    },
+    {
+      "display": "Learn Live – Scale your cloud resources with elasticity",
+      "url": "https://devblogs.microsoft.com/devops/learn-live-scale-your-cloud-resources-with-elasticity/",
+      "links": []
+    },
+    {
+      "display": "K8s Integrity Shield (tech-preview): Protecting the Integrity of Kubernetes Resources with Signature",
+      "url": "https://www.openshift.com/blog/k8s-integrity-shield-tech-preview-protecting-the-integrity-of-kubernetes-resources-with-signature",
+      "links": []
+    }
+  ],
+  "updated": "2021-03-15T23:28:37.1667922+00:00",
+  "date": "2021-03-15T00:00:00+00:00",
+  "links": [
+    {
+      "rel": "self",
+      "href": "api/resources/2021/3/15",
+      "method": "GET"
+    },
+    {
+      "rel": "prev",
+      "href": "api/resources/2021/3/14",
+      "method": "GET"
+    }
+  ]
+}
