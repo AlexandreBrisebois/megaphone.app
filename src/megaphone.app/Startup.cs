@@ -24,18 +24,29 @@ namespace Megaphone.App
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddDapr();
+            services.AddControllers();
 
             services.AddRazorPages();
             services.AddServerSideBlazor();
 
+            services.AddHttpClient();
+
             if (Debugger.IsAttached)
             {
-                var clock = new DateTimeOffset(2021, 3, 15, 0, 0, 0, TimeSpan.Zero).ToFixedClock();
+                if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("API-URL")))
+                {
+                    var clock = new DateTimeOffset(2021, 3, 15, 0, 0, 0, TimeSpan.Zero).ToFixedClock();
 
-                services.AddSingleton<IClock>(clock);
-                services.AddSingleton<IFeedService, MockFeedService>();
-                services.AddSingleton<IResourceService, MockResourceService>();
+                    services.AddSingleton<IClock>(clock);
+                    services.AddSingleton<IFeedService, MockFeedService>();
+                    services.AddSingleton<IResourceService, MockResourceService>();
+                }
+                else
+                {
+                    services.AddSingleton<IClock, UtcClock>();
+                    services.AddSingleton<IFeedService, HttpFeedService>();
+                    services.AddSingleton<IResourceService, HttpResourceService>();
+                }
             }
             else
             {
@@ -47,6 +58,9 @@ namespace Megaphone.App
             string key = Environment.GetEnvironmentVariable("INSTRUMENTATION_KEY");
             if (!string.IsNullOrEmpty(key))
                 services.AddApplicationInsightsTelemetry(key);
+            else
+                services.AddApplicationInsightsTelemetry();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,7 +84,6 @@ namespace Megaphone.App
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapBlazorHub();
-                endpoints.MapSubscribeHandler();
                 endpoints.MapControllers();
                 endpoints.MapFallbackToPage("/_Host");
             });

@@ -19,7 +19,7 @@ namespace Megaphone.App.Data
         }
         public async Task<ResourceListView> GetRecent()
         {
-            var date = clock.Now;
+            var date = clock.Now.UtcDateTime;
             var path = $"api/resources/{ date.Year}/{ date.Month}/{ date.Day}";
 
             ResourceListRepresentation list = await GetResources(path);
