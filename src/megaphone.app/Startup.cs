@@ -50,6 +50,7 @@ namespace Megaphone.App
             }
             else
             {
+                services.AddDaprClient();
                 services.AddSingleton<IClock, UtcClock>();
                 services.AddSingleton<IFeedService, DaprFeedService>();
                 services.AddSingleton<IResourceService, DaprResourceService>();
