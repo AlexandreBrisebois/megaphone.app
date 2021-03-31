@@ -3,7 +3,8 @@
 @using Megaphone.App.Data
 @using Megaphone.App.Data.Views
 @using System.Diagnostics
-@using System.Net 
+@using System.Net
+@using System.Threading
 
 @inject IResourceService service
 
@@ -20,13 +21,13 @@ else
         <table class="table">
             <thead>
                 <tr>
-                    <th align="left" colspan="2">@l.Key</th>                    
+                    <th align="left" colspan="2">@l.Key</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var r in l.Value)
                 {
-                    <tr>                        
+                    <tr>
                         <td width="20">
                             <a onclick="return ShareOnLinkedin('@r.Url');" href="@r.Url">
                                 <span class="oi oi-share-boxed" aria-hidden="true"></span>
@@ -43,8 +44,17 @@ else
 @code {
     private ResourceListView list = new();
 
-    protected override async Task OnInitializedAsync()
+    Timer timer;
+
+    private async Task UpdateResources()
     {
-            list = await service.GetRecent();
+        this.list = await service.GetRecent();
+
+        this.StateHasChanged();
+    }
+
+    protected override void OnInitialized()
+    {
+        timer = new Timer(async state => await InvokeAsync(() => this.UpdateResources()), null, TimeSpan.Zero,TimeSpan.FromSeconds(60));
     }
 }
